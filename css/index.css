@@ -200,13 +200,21 @@ ul {
         padding: 10px;
     }
     header{
-       display:block;
+       display:flex;
        margin: auto;
+       flex-wrap: wrap;
+    }
+    nav{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        order: 2;
     }
     .logo{
-        display: block;
+        display: flex;
         margin: auto;
         padding:40px;
+        order:1;
     }
     .cta-text{
         margin: auto;
@@ -227,7 +235,7 @@ ul {
     .contact{
         padding-left: 15px;
     }
-   
+    
 }
 
 /*----styles for mobile 500px----*/
@@ -239,10 +247,12 @@ ul {
     .logo{
         padding: 10px 0px 20px 0px;
         margin: 0 auto;
+        order: 1;
     }
     header{
         padding: 0px;
         margin: 0px;
+        flex-wrap: wrap;
     }
     nav{
         width: 100%;
@@ -250,22 +260,26 @@ ul {
         display: flex;
         flex-direction: column;
         border: 1px solid black;
+        order:2;
     }
     header nav a{
         width: 100%;
         padding: 20px 0px;
         font-size: 18px;
         text-align: center;
+        border-bottom: 1px solid black;
     }
     .cta{
         padding-bottom: 25px;
         padding-top: 45px;
     }
     .top-content{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .bottom-content{
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     .Features{
         padding: 20px 5px;
@@ -273,7 +287,7 @@ ul {
     .About{
         padding: 20px 5px;
     }
-    .contact p {
+    .contact {
         line-height: 1;
     }
 }
