@@ -194,3 +194,25 @@ ul {
 
 /*----styles for tablet 800px----*/
 
+@media (max-width: 800px){
+    .container{
+        max-width:800px;
+        padding: 10px;
+    }
+    header{
+       display:block;
+       margin: auto;
+    }
+    .logo{
+        display: block;
+        margin: auto;
+        padding:40px;
+    }
+    .cta-text{
+        margin: auto;
+    }
+    .cta-image{
+        display: none;
+    }
+    
+}
